@@ -84,7 +84,7 @@ test('should setup add expense action object with provided values', () => {
   });
 });
 
-test('should add expense to database and store', () => {
+test('should add expense to database and store', (done) => {
   const store = createMockStore({});
   const expenseData = {
     description: 'Mouse',
